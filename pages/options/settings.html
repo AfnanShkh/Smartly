@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="description" content="Smartly settings page." />
+		<link rel="stylesheet" href="/assets/css/styles.css" />
+		<script type="module" defer src="/assets/js/app.js"></script>
+		<title>Smartly | Settings</title>
+	</head>
+	<body>
+		<!-- Main -->
+		<main id="app">
+			<div class="main_settings">
+				<h2 class="main_title main_title--margin">Settings</h2>
+				<div class="settings_area">
+					<label for="dark-mode">
+						<div class="settings_item">
+							<img
+								src="/assets/icons/app/settings/dark-mode.svg"
+								class="settings_item_icon"
+							/>
+							<label
+								for="dark-mode"
+								class="settings_item_text dark-mode_checkbox_label"
+								>Dark mode</label
+							>
+							<input
+								class="dark-mode_checkbox"
+								type="checkbox"
+								name="dark-mode"
+								id="dark-mode"
+							/>
+						</div>
+					</label>
+					<a href="/pages/main/managebrokers.html" class="settings_item">
+						<img
+							src="/assets/icons/app/settings/manage-brokers.svg"
+							class="settings_item_icon"
+						/>
+						<p class="settings_item_text">Manage brokers</p>
+					</a>
+					<div class="settings_item upload-settings_div">
+						<img
+							src="/assets/icons/app/settings/upload-settings.svg"
+							class="settings_item_icon"
+						/>
+						<p class="settings_item_text">Upload settings</p>
+					</div>
+					<div class="settings_item download-settings_div">
+						<img
+							src="/assets/icons/app/settings/download-settings.svg"
+							class="settings_item_icon"
+						/>
+						<p class="settings_item_text">Download settings</p>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- Footer -->
+		<footer>
+			<div class="footer">
+				<a href="/pages/options/menu.html" class="footer_btn">Menu</a>
+				<a href="/index.html" class="footer_btn footer_btn--center">Home</a>
+				<a href="/pages/options/settings.html" class="footer_btn current"
+					>Settings</a
+				>
+			</div>
+		</footer>
+		<!-- Modals -->
+		<div class="modal_upload-settings-topic is-hidden modal">
+			<div class="modal_header">
+				<h2 class="modal_heading">
+					Enter topic
+				</h2>
+			</div>
+			<div class="modal_body">
+				<p class="modal_item">
+					This option save and retain your settings to the below provided topic
+				</p>
+				<div class="modal_item">
+					<div class="form uploadSettingsForm">
+						<div class="form_item">
+							<div class="form_field form_field_no-title">
+								<input
+									type="text"
+									name="upload_topic"
+									id="upload_topic"
+									placeholder="Topic to upload settings"
+								/>
+								<label for="upload_topic">Topic to upload settings</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal_item">
+					<button class="btn upload-settings_btn">Upload</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal_download-settings-topic is-hidden modal">
+			<div class="modal_header">
+				<h2 class="modal_heading">
+					Enter topic
+				</h2>
+			</div>
+			<div class="modal_body">
+				<p class="modal_item">
+					This option will override any existing settings and save the settings
+					recieved from the topic. Enter the same topic you uploaded the
+					settings (The broker should be same too)
+				</p>
+				<div class="modal_item">
+					<div class="form downloadSettingsForm">
+						<div class="form_item">
+							<div class="form_field form_field_no-title">
+								<input
+									type="text"
+									name="download_topic"
+									id="download_topic"
+									placeholder="Topic to download settings"
+								/>
+								<label for="download_topic">Topic to download settings</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal_item">
+					<button class="btn download-settings_btn">Download and save</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

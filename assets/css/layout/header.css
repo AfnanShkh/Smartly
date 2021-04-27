@@ -1,0 +1,26 @@
+/* Header styles
+	=============== */
+
+/* Home page styles */
+.header_home {
+	background: var(--color-white);
+	box-shadow: 0px 0px 5px var(--color-shadow);
+	border-radius: 0px 0px 30px 30px;
+	padding: 35px;
+}
+
+.header_home_logo {
+	text-align: center;
+}
+
+.header_broker {
+	margin-top: 45px;
+	padding: 0 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.header_title {
+	font-weight: 400;
+}

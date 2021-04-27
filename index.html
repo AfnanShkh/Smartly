@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta
+			name="description"
+			content="Smartly is a Secure WebSocket Based MQTT Client."
+		/>
+		<link rel="stylesheet" href="/assets/css/styles.css" />
+		<script type="module" defer src="/assets/js/app.js"></script>
+		<title>Smartly | Secure WebSocket Based MQTT Client</title>
+	</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<div class="header_home">
+				<h1 class="header_home_logo logo">Smartly</h1>
+			</div>
+		</header>
+		<!-- Main -->
+		<main id="app">
+			<!-- Main app area -->
+			<div class="main_home">
+				<!-- Current broker area -->
+				<div class="broker">
+					<!-- Broker details -->
+					<div class="broker_area is-hidden">
+						<h2 broker-id="" class="broker_title"></h2>
+						<img
+							src="/assets/icons/app/home/broker-info-drop.svg"
+							class="broker_drop-icon"
+						/>
+					</div>
+					<!-- Broker options -->
+					<div class="broker_options is-hidden"></div>
+				</div>
+				<!-- Main tiles area -->
+				<div class="broker_tiles"></div>
+				<!-- Tiles area ended -->
+			</div>
+			<!-- Main_home ended -->
+		</main>
+		<!-- Footer -->
+		<footer>
+			<div class="footer">
+				<a href="/pages/options/menu.html" class="footer_btn">Menu</a>
+				<a href="/index.html" class="footer_btn footer_btn--center current"
+					>Home</a
+				>
+				<a href="/pages/options/settings.html" class="footer_btn">Settings</a>
+			</div>
+		</footer>
+		<!-- Floating add button -->
+		<div class="floating-add_btn">
+			<img
+				src="/assets/icons/app/home/floating-add.svg"
+				class="floating-add_btn_icon"
+			/>
+		</div>
+		<!-- Modals -->
+		<div class="modal_add is-hidden modal">
+			<div class="modal_body">
+				<div class="col_div">
+					<p this-option="tile" class="col-2 modal_option">Tile</p>
+					<p this-option="broker" class="col-2 modal_option">
+						Broker
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="modal_tile_types is-hidden modal">
+			<div class="modal_header">
+				<h2 class="modal_heading">Select tile type</h2>
+			</div>
+			<div class="modal_body">
+				<div class="col_div">
+					<a
+						href="/pages/main/edittile.html?id=new&type=toggle"
+						class="col-1 modal_option"
+						>Toggle</a
+					>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

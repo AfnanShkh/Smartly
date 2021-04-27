@@ -1,0 +1,197 @@
+/* Main styles
+	============= */
+
+/* Home page styles */
+.main_home {
+	margin-top: 40px;
+	margin-bottom: 100px;
+}
+
+.floating-add_btn img {
+	width: 16px;
+	height: 16px;
+}
+
+.floating-add_btn {
+	cursor: pointer;
+	padding: 12px;
+	display: block;
+	position: fixed;
+	bottom: 100px;
+	right: 30px;
+	background-color: var(--color-white);
+	border-radius: 50%;
+	box-shadow: 1px 1px 5px var(--color-shadow);
+	width: 40px;
+	height: 40px;
+	z-index: 2;
+}
+
+.broker {
+	position: relative;
+}
+
+.broker_area {
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+}
+
+.broker_title {
+	font-weight: 400;
+}
+
+.broker_drop-icon {
+	margin-left: 10px;
+}
+
+.broker_options {
+	width: 100%;
+	display: flex;
+	position: absolute;
+	margin-top: 25px;
+	background-color: var(--color-white);
+	padding: 25px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px var(--color-shadow--light),
+		0px 0px 1px var(--color-shadow);
+	flex-direction: column;
+	z-index: 1;
+	max-height: 300px;
+	overflow-y: scroll;
+}
+
+.broker_option {
+	padding: 10px 15px;
+	cursor: pointer;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px var(--color-shadow--light);
+}
+
+.broker_option:not(:first-child) {
+	margin-top: 15px;
+}
+
+/* Menu page styles */
+
+.menu_area {
+	margin-top: 40px;
+}
+
+.menu_item {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.menu_item:not(:first-child) {
+	margin-top: 30px;
+}
+
+.menu_item_text {
+	margin-left: 20px;
+}
+
+/* Settings page styles*/
+.settings_area {
+	margin-top: 40px;
+}
+
+.settings_item {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.settings_item:not(:first-child) {
+	margin-top: 30px;
+}
+
+.settings_item_text {
+	margin-left: 20px;
+}
+
+.settings_item_text--error {
+	color: var(--color-error);
+}
+
+.dark-mode_checkbox {
+	margin-left: auto;
+	position: relative;
+}
+
+.dark-mode_checkbox::after {
+	position: absolute;
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 4px;
+	border: 1px solid var(--color-prim);
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	background-color: var(--color-white);
+}
+
+.dark-mode_checkbox:checked::before {
+	position: absolute;
+	content: url('../../icons/app/common/checkbox.svg');
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
+
+/* Manage brokers page styles*/
+.manage-brokers_item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.manage-brokers_option-icon--delete {
+	margin-left: 20px;
+}
+
+.manage-brokers_item:not(:first-child) {
+	margin-top: 20px;
+}
+
+.manage-brokers_add-btn {
+	margin-top: 25px;
+}
+
+/* About page */
+.about-app_socials {
+	margin-top: 30px;
+}
+
+.social_link:not(:last-child) {
+	margin-right: 20px;
+}
+
+/* Common */
+.main_title {
+	font-weight: 400;
+}
+
+.main_title--margin {
+	margin-top: 45px;
+}
+
+.form_broker,
+.form_tile,
+.form_profile,
+.manage-brokers_area,
+.about-app_area {
+	margin-top: 40px;
+}
+
+.main_broker,
+.main_tile,
+.form_profile,
+.main_manage-brokers,
+.main_about-app {
+	margin-bottom: 100px;
+}

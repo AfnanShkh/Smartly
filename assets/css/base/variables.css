@@ -1,0 +1,29 @@
+/* Variables
+	============ */
+
+:root {
+	--color-prim: #000000;
+
+	--color-sec: #00b7d0;
+
+	--color-text: #00374f;
+
+	--color-text--light: #7399a9;
+
+	--color-error: #ff295e;
+
+	--color-success: #00cea9;
+
+	--color-white: #ffffff;
+
+	--color-shadow--light: #f7f7f7;
+
+	--color-shadow: #d2d2d2;
+
+	/* Disabled btn colors*/
+	--disabled-prim: #a1a1a1;
+
+	--disabled-success: #003a31;
+
+	--disabled-error: #580d20;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="description" content="Smartly edit broker page." />
+		<link rel="stylesheet" href="/assets/css/styles.css" />
+		<script type="module" defer src="/assets/js/app.js"></script>
+		<title>Smartly | Edit Broker</title>
+	</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<div class="header_broker">
+				<h2 class="header_title">Edit broker</h2>
+				<a href="/pages/main/managebrokers.html" class="btn--header">Back</a>
+			</div>
+		</header>
+		<!-- Main -->
+		<main id="app">
+			<!-- Main app area -->
+			<div class="main_broker">
+				<form class="form_broker form">
+					<div class="form_item">
+						<h3 class="form_title">Basic details</h3>
+						<div class="form_field">
+							<input
+								type="text"
+								name="title"
+								id="title"
+								placeholder="Visible in dashboard"
+							/>
+							<label for="title">Title</label>
+						</div>
+						<div class="form_field">
+							<input
+								type="text"
+								name="broker_url"
+								id="broker_url"
+								placeholder="Without protocol only"
+							/>
+							<label for="broker_url">Broker url</label>
+						</div>
+						<div class="form_field">
+							<input
+								type="number"
+								name="broker_port"
+								id="broker_port"
+								placeholder="Only WebSocket Port"
+							/>
+							<label for="broker_port">Broker port</label>
+						</div>
+					</div>
+					<div class="form_item">
+						<h3 class="form_title">Protection (Only if broker is protected)</h3>
+						<div class="form_field">
+							<input
+								type="text"
+								name="broker_username"
+								id="broker_username"
+								placeholder="Enter broker usename"
+							/>
+							<label for="broker_username">Broker username</label>
+						</div>
+						<div class="form_field">
+							<input
+								type="password"
+								name="broker_password"
+								id="broker_password"
+								placeholder="Enter broker password"
+							/>
+							<label for="broker_password">Broker password</label>
+						</div>
+					</div>
+					<div class="form_item">
+						<h3 class="form_title">Additional</h3>
+						<div class="form_field">
+							<input
+								type="number"
+								name="qos"
+								id="qos"
+								placeholder="0 or 1 or 2 Only"
+							/>
+							<label for="qos">QoS (Optional)</label>
+						</div>
+					</div>
+					<div class="form_msg"></div>
+					<div class="form_btn-area">
+						<input
+							type="button"
+							class="btn btn--success broker_save_btn"
+							value="Save"
+						/>
+					</div>
+				</form>
+			</div>
+			<!-- Main_home ended -->
+		</main>
+		<!-- Footer -->
+		<footer>
+			<div class="footer">
+				<a href="/pages/options/menu.html" class="footer_btn">Menu</a>
+				<a href="/index.html" class="footer_btn footer_btn--center">Home</a>
+				<a href="/pages/options/settings.html" class="footer_btn">Settings</a>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,151 @@
+.form {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+}
+
+.form_item {
+	display: flex;
+	flex-direction: column;
+}
+
+.form_item:not(:first-child) {
+	margin-top: 35px;
+}
+
+.form_title {
+	font-weight: 400;
+	margin-bottom: 25px;
+}
+
+.form_field {
+	display: flex;
+	position: relative;
+	width: 100%;
+}
+
+.form_field:not(:nth-child(2)) {
+	margin-top: 20px;
+}
+
+.form_field_no-title:not(:nth-child(2)) {
+	margin-top: 0;
+}
+
+.form_field input[type='text'],
+.form_field input[type='email'],
+.form_field input[type='password'],
+.form_field input[type='number'] {
+	width: 100%;
+	border: 1px solid var(--color-prim);
+	border-radius: 5px;
+	color: var(--color-text);
+	padding: 15px 20px;
+}
+
+.form_field label {
+	position: absolute;
+	top: 17px;
+	left: 20px;
+	transition: top 0.2s;
+}
+
+.form_field input[type='text']:focus,
+.form_field input[type='email']:focus,
+.form_field input[type='password']:focus,
+.form_field input[type='number']:focus {
+	border: 2px solid var(--color-prim);
+	outline: none;
+}
+
+.form_field input[type='text']:focus + label,
+.form_field input[type='email']:focus + label,
+.form_field input[type='password']:focus + label,
+.form_field input[type='number']:focus + label {
+	top: -10px;
+	background-color: var(--color-white);
+	padding: 2px 6px;
+	font-size: 0.625rem;
+	color: var(--color-prim);
+}
+
+.form_field input[type='text']:not(:placeholder-shown) + label,
+.form_field input[type='email']:not(:placeholder-shown) + label,
+.form_field input[type='password']:not(:placeholder-shown) + label,
+.form_field input[type='number']:not(:placeholder-shown) + label {
+	top: -10px;
+	background-color: var(--color-white);
+	padding: 2px 6px;
+	font-size: 0.625rem;
+	color: var(--color-prim);
+}
+
+.form_btn-area {
+	margin-top: 25px;
+}
+
+.form_field input[type='text']::placeholder,
+.form_field input[type='email']::placeholder,
+.form_field input[type='password']::placeholder,
+.form_field input[type='number']::placeholder {
+	visibility: hidden;
+}
+
+.form_field input[type='text']:focus::placeholder,
+.form_field input[type='email']:focus::placeholder,
+.form_field input[type='password']:focus::placeholder,
+.form_field input[type='number']:focus::placeholder {
+	visibility: visible;
+	color: var(--color-text--light);
+	transition: visibility 0s 0.2s;
+}
+
+.form_msg {
+	margin-top: 20px;
+	display: none;
+}
+
+.form_field--checkbox {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid var(--color-prim);
+	border-radius: 5px;
+	color: var(--color-text);
+	padding: 15px 20px;
+}
+
+.form_field--checkbox:not(:nth-child(2)) {
+	margin-top: 20px;
+}
+
+.form_field--checkbox input[type='checkbox'] {
+	position: relative;
+}
+
+.form_field--checkbox input[type='checkbox']::after {
+	position: absolute;
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 4px;
+	border: 1px solid var(--color-prim);
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	background-color: var(--color-white);
+}
+
+.form_field--checkbox input[type='checkbox']:checked::before {
+	position: absolute;
+	content: url('../../icons/app/common/checkbox.svg');
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
+
+.form_field--checkbox label {
+	width: 100%;
+}

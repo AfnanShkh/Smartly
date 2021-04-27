@@ -1,0 +1,93 @@
+/* Button styles
+	================= */
+
+.btn {
+	padding: 10px 30px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	background-color: var(--color-prim);
+	color: var(--color-white);
+	cursor: pointer;
+}
+
+.btn:disabled {
+	background-color: var(--disabled-prim);
+}
+
+.btn:hover {
+	box-shadow: 0 0 2px 0 var(--color-prim);
+}
+
+.btn:active {
+	box-shadow: 0 0 1px 0 var(--color-prim);
+}
+
+.btn--fullwidth {
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.btn--with-icon {
+	padding: 10px 30px 10px 50px;
+	position: relative;
+	border: none;
+	border-radius: 5px;
+	display: inline-flex;
+	align-items: center;
+	color: var(--color-white);
+}
+
+.btn--icon {
+	position: absolute;
+	left: 20px;
+}
+
+.btn--success {
+	background-color: var(--color-success);
+}
+
+.btn--error {
+	background-color: var(--color-error);
+}
+
+.btn--success:disabled {
+	background-color: var(--disabled-success);
+}
+
+.btn--error:disabled {
+	background-color: var(--disabled-error);
+}
+
+.btn--success:hover {
+	box-shadow: 0 0 2px 0 var(--color-success);
+}
+
+.btn--success:active {
+	box-shadow: 0 0 1px 0 var(--color-success);
+}
+
+.btn--error:active {
+	box-shadow: 0 0 1px 0 var(--color-error);
+}
+
+.btn--error:hover {
+	box-shadow: 0 0 2px 0 var(--color-error);
+}
+
+.btn--header {
+	background: var(--color-prim);
+	border-radius: 5px;
+	padding: 4px 20px;
+	text-align: center;
+	color: var(--color-white);
+}
+
+.btn--header:hover {
+	box-shadow: 0 0 2px 0 var(--color-prim);
+}
+
+.btn--header:active {
+	box-shadow: 0 0 1px 0 var(--color-prim);
+}

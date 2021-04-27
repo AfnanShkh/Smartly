@@ -1,0 +1,13 @@
+.col_div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.col-2 {
+	width: calc(50% - 10px);
+}
+
+.col-1 {
+	width: calc(100% - 10px);
+}

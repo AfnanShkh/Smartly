@@ -1,0 +1,57 @@
+/* Fonts
+	========== */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap');
+
+/* Base styles
+	=============== */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+body {
+	color: var(--color-text);
+	font-family: 'Roboto';
+	font-size: 16px;
+	font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+div,
+span {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-text);
+}
+
+.link {
+	color: var(--color-sec);
+}
+
+#app {
+	margin: 0 auto;
+	max-width: 500px;
+	padding: 0 30px;
+	overflow-wrap: break-word;
+}

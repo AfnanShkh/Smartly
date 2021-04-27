@@ -1,0 +1,30 @@
+/* Footer styles
+	=============== */
+
+.footer {
+	display: flex;
+	background-color: var(--color-white);
+	box-shadow: 0px 0px 5px var(--color-shadow);
+	padding: 22px 0;
+	justify-content: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer_btn--center {
+	margin: 0 15px;
+}
+
+.footer_btn {
+	width: 90px;
+	color: var(--color-text);
+	padding: 4px 0;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.footer_btn.current {
+	background-color: var(--color-prim);
+	color: var(--color-white);
+}
