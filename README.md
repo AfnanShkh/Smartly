@@ -9,7 +9,7 @@
 
 ## Overview
 
-Smartly is a WebSocket-Based MQTT Client **PWA** which I made as the controller for my IoT project back in 2019 which was a home automation project.
+Smartly is a WebSocket-Based MQTT Client **PWA** which I made as the controller for my [IoT project](https://github.com/IamAfnanSk/iot-home-automation) back in 2019 which was a home automation project.
 
 ## Tech
 
